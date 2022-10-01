@@ -1,27 +1,17 @@
-name: Blog post workflow
+name: ifhde
 on:
   schedule:
-    # Runs every day at 3pm UTC (11pm SG)
-    - cron: '0 15 * * *'
+    # Runs every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 jobs:
-  pull_blog_rss:
-    name: Update with latest blog posts
+  update-readme-with-blog:
+    name: Update this repo's README with latest Medium post
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Get RSS Feed
-        uses: InfrastructureHeroes/.github@master
+      - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_url: https://www.infrastrukturhelden.de/feed
-          count: 10 # default 5
-      - name: Commit file changes
-        run: |
-            git config --global user.name 'FabianNiesen'
-            git config --global user.email 'mail@fabian-niesen.de'
-            git add .
-            git diff --quiet --cached || git commit -m "Update README"    
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          comment_tag_name: "BLOGPOSTSDE"
+          feed_list: "https://www.infrastrukturhelden.de/feed/"

@@ -3,7 +3,9 @@ An [English](https://www.infrastructureheroes.org/) / [German](https://www.infra
 
 These are the repsitories for the files, sample scripts, wallpaper, diagrams and so on. Fell free to use them based on their licensing.
 ## Last posts on InfrastructureHeroes.org
-BLOGPOSTSEN
+<!-- BLOGPOSTS:START -->
+<!-- BLOGPOSTS:END -->
 
 ## Last posts on InfrastrukturHelden.de
-BLOGPOSTSDE
+<!-- BLOGPOSTSDE:START -->
+<!-- BLOGPOSTSDE:END -->

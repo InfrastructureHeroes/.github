@@ -5,3 +5,6 @@ These are the repsitories for the files, sample scripts, wallpaper, diagrams and
 ## My Blog
 <!-- BLOGPOSTS:START -->
 <!-- BLOGPOSTS:END -->
+## My BlogDE
+<!-- BLOGPOSTSDE:START -->
+<!-- BLOGPOSTSDE:END -->
